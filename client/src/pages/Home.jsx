@@ -19,24 +19,31 @@ const Home = () => {
         <motion.section className="home" {...slideAnimation('left')}>
           <motion.header {...slideAnimation("down")}>
             <img 
-              src='./threejs.png'
+              src='./logomate2.png'
               alt="logo"
-              className="w-8 h-8 object-contain"
+              className="w-20 h-20 object-contain"
             />
           </motion.header>
 
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 className="head-text">
-                Let's <br className="xl:block hidden" /> Do It.
-              </h1>
+              <h1s className="text-7xl">
+                <b>Unleash Your Creativity <br/>
+                with DALL-E Designs</b>
+
+                {/* Let's <br className="xl:block hidden" /> Do It. */}
+              </h1s>
             </motion.div>
             <motion.div
               {...headContentAnimation}
               className="flex flex-col gap-5"
             >
-              <p className="max-w-md font-normal text-gray-600 text-base">
-              Create your unique and exclusive shirt with our brand-new 3D customization tool. <strong>Unleash your imagination</strong>{" "} and define your own style.
+              <p className="max-w-md font-normal text-gray-600 text-base text-justify">
+              Our website provides a unique and innovative way to design your shirt. 
+              With the help of DALL-E, an AI-powered image generation system, you can create a logo that is personalized, 
+              creative, and truly one-of-a-kind. DALL-E uses machine learning algorithms to generate images that are inspired 
+              by the user's input, allowing for endless possibilities in logo design. So, unleash your creativity and design a
+              shirt that truly represents you with DALL-E Designs.
               </p>
 
               <CustomButton 
